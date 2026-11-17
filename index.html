@@ -6,11 +6,10 @@
 <title>1 Aninhos da Serena 🎀</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
-  body{background:#fff5f8;color:#5a2a3a;overflow-x:hidden}
-  .hero{
+  body{background:#fff;color:#5a2a3a;overflow-x:hidden}
+.hero{
   min-height:100vh;
-  background: #fff url('fundo.jpeg') no-repeat center center;
-  background-size: 100% 100%;
+  background:transparent;
   display:flex;flex-direction:column;align-items:center;justify-content:center;
   text-align:center;padding:20px;position:relative;
 }
@@ -48,10 +47,18 @@
   transform-origin:50% 50%;
   display:block;
 }
+ .fundo-fixo{
+  position:fixed;
+  top:0;left:0;width:100%;height:100%;
+  background:#fff url('fundo.jpeg') no-repeat center center;
+  background-size:100% 100%;
+  z-index:-1;
+}
 </style>
 </head>
 <body>
-
+ 
+<div class="fundo-fixo"></div>
 <section class="hero">
   <div class="badge">VOCÊ É NOSSO CONVIDADO ESPECIAL</div>
   <h1>Serena <span>faz 1 aninhos!</span></h1>
