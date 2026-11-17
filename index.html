@@ -3,110 +3,128 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Serena faz 2 Anos 🎀</title>
+<title>1 Aninho da Serena 🎀</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
-  body{background:#fff0f5;color:#5a2a3a;text-align:center;padding:20px}
-  .card{max-width:480px;margin:0 auto;background:white;border-radius:30px;overflow:hidden;box-shadow:0 10px 30px rgba(255,105,180,.3);padding-bottom:30px}
-  .topo{background:linear-gradient(135deg,#ff9ec6,#ffc2dd);padding:30px 20px}
-  .topo h1{font-size:42px;color:white;text-shadow:2px 2px 0 #ff6fae}
-  .topo p{color:white;font-weight:bold;margin-top:5px}
-  .foto{width:150px;height:150px;border-radius:50%;border:5px solid white;object-fit:cover;margin:-70px auto 10px;background:#ffd6e7;display:block;font-size:60px;line-height:140px}
-  h2{font-size:26px;margin:10px 0 5px}
-  .data{font-size:18px;background:#ffe1ee;display:inline-block;padding:8px 18px;border-radius:20px;margin:10px 0;font-weight:bold}
-  .contador{display:flex;justify-content:center;gap:10px;margin:20px 0}
-  .box{background:#ff6fae;color:white;border-radius:15px;padding:12px 5px;width:70px}
-  .box span{font-size:28px;font-weight:bold;display:block}
-  .box small{font-size:11px}
-  .local{background:#fff5f8;border:2px dashed #ffb0cf;border-radius:15px;padding:15px;margin:15px}
-  input,select,textarea{width:90%;padding:12px;margin:8px 0;border:2px solid #ffd6e7;border-radius:12px;font-size:16px;outline:none}
-  .btn{background:#ff4d9e;color:white;border:none;padding:15px 25px;border-radius:25px;font-size:18px;font-weight:bold;width:90%;cursor:pointer;margin-top:10px}
-  .btn2{background:#25D366;color:white;text-decoration:none;display:inline-block;padding:14px 20px;border-radius:25px;font-weight:bold;width:90%;margin-top:10px}
-  .btn-planilha{background:#34a853;color:white;text-decoration:none;display:inline-block;padding:14px 20px;border-radius:25px;font-weight:bold;width:90%;margin-top:10px}
-  #ok{display:none;background:#d4edda;color:#155724;padding:12px;border-radius:12px;width:90%;margin:15px auto}
+  body{background:#fff5f8;color:#5a2a3a;overflow-x:hidden}
+  .hero{
+    min-height:100vh;
+    background: linear-gradient(180deg,#ffd6e7 0%, #fff5f8 70%);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:20px;position:relative;
+  }
+  .hero::before{content:"🎀 ✨ 🧸 ✨ 🎀";font-size:28px;letter-spacing:8px}
+  .badge{background:#fff;color:#e7548a;padding:8px 18px;border-radius:50px;font-weight:700;font-size:13px;letter-spacing:1px;margin:16px 0;box-shadow:0 4px 15px rgba(0,0,0,.08)}
+  h1{font-size:52px;line-height:1;color:#d6336c}
+  h1 span{display:block;font-size:22px;color:#5a2a3a;margin-top:6px;font-weight:400}
+  .foto{
+    width:220px;height:220px;border-radius:50%;object-fit:cover;
+    border:8px solid #fff;box-shadow:0 10px 30px rgba(214,51,108,.25);
+    margin:22px 0;background:#ffe0ec;display:flex;align-items:center;justify-content:center;font-size:90px;
+  }
+  .info{background:#fff;border-radius:20px;padding:20px;width:100%;max-width:420px;box-shadow:0 8px 25px rgba(0,0,0,.07)}
+  .info p{font-size:17px;margin:8px 0}
+  .info strong{color:#d6336c}
+  .countdown{display:flex;gap:10px;justify-content:center;margin:18px 0}
+  .countdown div{background:#d6336c;color:#fff;border-radius:14px;padding:12px 0;width:72px}
+  .countdown b{font-size:24px;display:block}
+  .countdown small{font-size:11px;opacity:.9}
+  .btn{
+    display:block;text-align:center;text-decoration:none;
+    background:#d6336c;color:#fff;padding:16px;border-radius:50px;
+    font-weight:800;font-size:18px;margin-top:14px;box-shadow:0 8px 20px rgba(214,51,108,.35)
+  }
+  .btn-outline{background:#fff;color:#d6336c;border:2px solid #d6336c;box-shadow:none}
+  .section{padding:32px 20px;max-width:500px;margin:0 auto;text-align:center}
+  .card{background:#fff;border:1px solid #ffe0ec;border-radius:18px;padding:18px;margin:12px 0;text-align:left}
+  input,select,textarea{width:100%;padding:13px;border-radius:12px;border:1.5px solid #ffd6e7;margin:8px 0;font-size:16px;outline:none}
+  input:focus{border-color:#d6336c}
+  button{width:100%;padding:15px;border:none;border-radius:50px;background:#25D366;color:#fff;font-weight:800;font-size:17px;cursor:pointer}
+  .success{display:none;background:#d4edda;color:#155724;padding:14px;border-radius:12px;margin-top:12px}
+  .footer{font-size:13px;opacity:.6;padding-bottom:30px;text-align:center}
 </style>
 </head>
 <body>
 
-<div class="card">
-  <div class="topo">
-    <h1>Serena 🎀</h1>
-    <p>Vai fazer 2 aninhos!</p>
+<!-- CAPA -->
+<section class="hero">
+  <div class="badge">VOCÊ É NOSSO CONVIDADO ESPECIAL</div>
+  <h1>Serena <span>faz 1 aninho!</span></h1>
+  
+  <!-- TROQUE O EMOJI PELA FOTO DELA -->
+  <!-- <img src="foto-serena.jpg" class="foto"> -->
+  <div class="foto">👶🏻🎀</div>
+
+  <div class="info">
+    <p>🗓️ <strong>Sábado, 14 de Dezembro</strong></p>
+    <p>🕐 <strong>15h00</strong></p>
+    <p>📍 <strong>Salão de Festas - Nova Iguaçu, RJ</strong></p>
+    <p>🎨 Tema: Jardim Encantado Rosa</p>
+
+    <div class="countdown">
+      <div><b id="d">00</b><small>DIAS</small></div>
+      <div><b id="h">00</b><small>HORAS</small></div>
+      <div><b id="m">00</b><small>MIN</small></div>
+      <div><b id="s">00</b><small>SEG</small></div>
+    </div>
+
+    <!-- BOTÃO 1: ABRE A PLANILHA / FORMULÁRIO -->
+    <!-- 👇 TROQUE O LINK AQUI PELA SUA PLANILHA DO GOOGLE -->
+    <a class="btn" href="https://docs.google.com/spreadsheets/d/SEU_ID_DA_PLANILHA" target="_blank">✅ CONFIRMAR PRESENÇA</a>
+    <a class="btn btn-outline" href="https://maps.google.com/?q=Nova+Iguaçu+RJ" target="_blank">📍 Como chegar</a>
+  </div>
+</section>
+
+<!-- CONFIRMAÇÃO DENTRO DO SITE -->
+<section class="section">
+  <h2 style="color:#d6336c">Confirme aqui também 💌</h2>
+  <p style="margin:10px 0">Preencha e sua resposta vai direto pra planilha da mamãe!</p>
+
+  <div class="card">
+    <form id="rsvpForm">
+      <label>Seu nome *</label>
+      <input type="text" id="nome" placeholder="Ex: Tia Maria" required>
+
+      <label>Você vai? *</label>
+      <select id="vai">
+        <option value="Sim, vou!">Sim, vou! 🎉</option>
+        <option value="Não vou conseguir">Não vou conseguir 😢</option>
+      </select>
+
+      <label>Quantas pessoas?</label>
+      <select id="qtd">
+        <option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option>
+      </select>
+
+      <label>Deixe um recadinho pra Serena</label>
+      <textarea id="msg" rows="2" placeholder="Parabéns Serena!"></textarea>
+
+      <button type="submit">Enviar confirmação para planilha</button>
+      <div class="success" id="ok">✅ Obrigada! Sua presença foi registrada! Te esperamos! 🎀</div>
+    </form>
   </div>
 
-  <div class="foto">🎀</div>
+  <p style="margin-top:14px">Dúvidas? Fala com a mamãe no WhatsApp</p>
+  <a class="btn" style="background:#25D366" href="https://wa.me/5521999999999?text=Oi!%20Confirmo%20presença%20no%20aniversário%20da%20Serena!" target="_blank">💬 Chamar no WhatsApp</a>
+</section>
 
-  <h2>Você é nosso convidado especial!</h2>
-  <p>Venha comemorar com a gente!</p>
-
-  <div class="data">🗓️ Domingo, 21 de Fevereiro de 2027<br>⏰ às 15h</div>
-
-  <!-- CONTAGEM REGRESSIVA -->
-  <h3 style="margin-top:15px">Faltam para a festa:</h3>
-  <div class="contador">
-    <div class="box"><span id="d">00</span><small>DIAS</small></div>
-    <div class="box"><span id="h">00</span><small>HORAS</small></div>
-    <div class="box"><span id="m">00</span><small>MIN</small></div>
-    <div class="box"><span id="s">00</span><small>SEG</small></div>
-  </div>
-
-  <div class="local">
-    <strong>📍 Local da Festa</strong><br>
-    Nova Iguaçu - RJ<br>
-    <small>Endereço completo será enviado no WhatsApp</small>
-  </div>
-
-  <!-- FORMULÁRIO -->
-  <h3>Confirme sua presença 👇</h3>
-  <form id="rsvpForm">
-    <input type="text" id="nome" placeholder="Seu nome completo" required>
-    <select id="vai" required>
-      <option value="">Você vai?...</option>
-      <option value="Sim, vou!">Sim, vou! 🎉</option>
-      <option value="Não vou conseguir">Não vou conseguir 😢</option>
-    </select>
-    <input type="number" id="qtd" placeholder="Quantas pessoas? Ex: 2" min="1" value="1">
-    <textarea id="msg" placeholder="Deixe um recadinho pra Serena..."></textarea>
-    <button type="submit" class="btn">✅ CONFIRMAR PRESENÇA</button>
-  </form>
-
-  <div id="ok">✅ Obrigada! Sua resposta foi salva! 🎀</div>
-
-  <!-- BOTÃO DA PLANILHA -->
-  <a class="btn-planilha" href="https://docs.google.com/spreadsheets/d/SEU_ID_DA_PLANILHA" target="_blank">📋 VER PLANILHA DE CONFIRMADOS</a>
-
-  <a class="btn2" href="https://wa.me/5521999999999?text=Oi!%20Confirmo%20presença%20na%20festa%20da%20Serena%20dia%2021/02/2027!" target="_blank">💬 Confirmar pelo WhatsApp</a>
-
-  <p style="margin-top:20px;font-size:13px;color:#999">Feito com amor para Serena 💖</p>
-</div>
+<p class="footer">Feito com amor para Serena • 1 aninho • 2026</p>
 
 <script>
-// ===== CONTAGEM REGRESSIVA - 21/02/2027 =====
-const dataFesta = new Date("2027-02-21T15:00:00-03:00").getTime();
-
-function atualizarContagem(){
+// ===== CONTAGEM REGRESSIVA =====
+// 👇 TROQUE A DATA AQUI
+const dataFesta = new Date("2026-12-14T15:00:00-03:00").getTime();
+setInterval(()=>{
   const agora = new Date().getTime();
   const falta = dataFesta - agora;
-  if(falta < 0){
-    document.getElementById("d").innerText="00";
-    document.getElementById("h").innerText="00";
-    document.getElementById("m").innerText="00";
-    document.getElementById("s").innerText="00";
-    return;
-  }
-  const dias = Math.floor(falta / (1000*60*60*24));
-  const horas = Math.floor((falta % (1000*60*60*24)) / (1000*60*60));
-  const minutos = Math.floor((falta % (1000*60*60)) / (1000*60));
-  const segundos = Math.floor((falta % (1000*60)) / 1000);
-  document.getElementById("d").innerText = dias;
-  document.getElementById("h").innerText = horas;
-  document.getElementById("m").innerText = minutos;
-  document.getElementById("s").innerText = segundos;
-}
-atualizarContagem();
-setInterval(atualizarContagem, 1000);
+  if(falta < 0) return;
+  document.getElementById("d").innerText = Math.floor(falta / (1000*60*60*24));
+  document.getElementById("h").innerText = Math.floor((falta % (1000*60*60*24)) / (1000*60*60));
+  document.getElementById("m").innerText = Math.floor((falta % (1000*60*60)) / (1000*60));
+  document.getElementById("s").innerText = Math.floor((falta % (1000*60)) / 1000);
+},1000);
 
-// ===== ENVIAR PARA PLANILHA =====
+// ===== ENVIAR PARA PLANILHA GOOGLE =====
 document.getElementById("rsvpForm").addEventListener("submit", async function(e){
   e.preventDefault();
   const dados = {
@@ -115,19 +133,24 @@ document.getElementById("rsvpForm").addEventListener("submit", async function(e)
     qtd: document.getElementById("qtd").value,
     msg: document.getElementById("msg").value
   };
-  // 👇 COLA AQUI O LINK DO SEU APPS SCRIPT DA PLANILHA
+
+  // 👇 COLE AQUI O LINK DO SEU APPS SCRIPT / GOOGLE SHEETS
   const URL_PLANILHA = "COLE_AQUI_O_LINK_DO_SEU_APPS_SCRIPT";
+
   try{
-    if(!URL_PLANILHA.includes("COLE_AQUI")){
-      await fetch(URL_PLANILHA, {method:"POST", mode:"no-cors", headers:{"Content-Type":"application/json"}, body: JSON.stringify(dados)});
+    if(URL_PLANILHA.includes("COLE_AQUI")){
+      // Se ainda não configurou, só mostra sucesso de exemplo
+      document.getElementById("ok").style.display = "block";
+      document.getElementById("ok").innerText = "✅ Exemplo: Conecte sua planilha para salvar de verdade! (veja o passo a passo)";
+    } else {
+      await fetch(URL_PLANILHA, {method:"POST", mode:"no-cors", body: JSON.stringify(dados)});
+      document.getElementById("ok").style.display = "block";
     }
-    document.getElementById("ok").style.display = "block";
     this.reset();
-  }catch(erro){
-    alert("Deu erro, tenta pelo WhatsApp!");
+  }catch(err){
+    alert("Deu erro, tenta de novo ou chama no WhatsApp!");
   }
 });
 </script>
-
 </body>
 </html>
