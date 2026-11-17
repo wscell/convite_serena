@@ -1,14 +1,31 @@
-// CONTAGEM REGRESSIVA
-const dataFesta = new Date("2027-02-21T11:00-24:00").getTime();
-setInterval(()=>{
-  const agora = new Date().getTime();
-  const falta = dataFesta - agora;
-  if(falta < 0) return;
-  document.getElementById("d").innerText = Math.floor(falta / (1000*60*60*24));
-  document.getElementById("h").innerText = Math.floor((falta % (1000*60*60*24)) / (1000*60*60));
-  document.getElementById("m").innerText = Math.floor((falta % (1000*60*60)) / (1000*60));
-  document.getElementById("s").innerText = Math.floor((falta % (1000*60)) / 1000);
-},1000);
+// DATA CERTA: 21 de Fevereiro de 2027 às 15h
+  const dataFesta = new Date("2027-02-21T15:00:00-03:00").getTime();
+
+  function atualizarContagem() {
+    const agora = new Date().getTime();
+    const falta = dataFesta - agora;
+
+    if (falta < 0) {
+      document.getElementById("d").innerText = "00";
+      document.getElementById("h").innerText = "00";
+      document.getElementById("m").innerText = "00";
+      document.getElementById("s").innerText = "00";
+      return;
+    }
+
+    const dias = Math.floor(falta / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((falta % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos = Math.floor((falta % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos = Math.floor((falta % (1000 * 60)) / 1000);
+
+    document.getElementById("d").innerText = dias;
+    document.getElementById("h").innerText = horas;
+    document.getElementById("m").innerText = minutos;
+    document.getElementById("s").innerText = segundos;
+  }
+
+  atualizarContagem();
+  setInterval(atualizarContagem, 1000);
 
 // ENVIAR PARA PLANILHA
 document.getElementById("rsvpForm").addEventListener("submit", async function(e){
