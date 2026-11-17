@@ -135,10 +135,10 @@ document.getElementById("rsvpForm").addEventListener("submit", async function(e)
   };
 
   // 👇 COLE AQUI O LINK DO SEU APPS SCRIPT / GOOGLE SHEETS
-  const URL_PLANILHA = "COLE_AQUI_O_LINK_DO_SEU_APPS_SCRIPT";
+  const URL_PLANILHA = "https://docs.google.com/spreadsheets/d/1k8mpXYcddnWUXLPnrb1PY0ubwK-v0czlE21XMEu_bVM/edit?usp=drivesdk";
 
   try{
-    if(URL_PLANILHA.includes("COLE_AQUI")){
+    if(URL_PLANILHA.includes("https://docs.google.com/spreadsheets/d/1k8mpXYcddnWUXLPnrb1PY0ubwK-v0czlE21XMEu_bVM/edit?usp=drivesdk")){
       // Se ainda não configurou, só mostra sucesso de exemplo
       document.getElementById("ok").style.display = "block";
       document.getElementById("ok").innerText = "✅ Exemplo: Conecte sua planilha para salvar de verdade! (veja o passo a passo)";
