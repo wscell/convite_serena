@@ -4,61 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>1 Aninho da Serena 🎀</title>
-<style>
-  *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
-  body{background:#fff5f8;color:#5a2a3a;overflow-x:hidden}
-  .hero{
-    min-height:100vh;
-    background: linear-gradient(180deg,#ffd6e7 0%, #fff5f8 70%);
-    display:flex;flex-direction:column;align-items:center;justify-content:center;
-    text-align:center;padding:20px;position:relative;
-  }
-  .hero::before{content:"🎀 ✨ 🧸 ✨ 🎀";font-size:28px;letter-spacing:8px}
-  .badge{background:#fff;color:#e7548a;padding:8px 18px;border-radius:50px;font-weight:700;font-size:13px;letter-spacing:1px;margin:16px 0;box-shadow:0 4px 15px rgba(0,0,0,.08)}
-  h1{font-size:52px;line-height:1;color:#d6336c}
-  h1 span{display:block;font-size:22px;color:#5a2a3a;margin-top:6px;font-weight:400}
-  .foto{
-    width:220px;height:220px;border-radius:50%;object-fit:cover;
-    border:8px solid #fff;box-shadow:0 10px 30px rgba(214,51,108,.25);
-    margin:22px 0;background:#ffe0ec;display:flex;align-items:center;justify-content:center;font-size:90px;
-  }
-  .info{background:#fff;border-radius:20px;padding:20px;width:100%;max-width:420px;box-shadow:0 8px 25px rgba(0,0,0,.07)}
-  .info p{font-size:17px;margin:8px 0}
-  .info strong{color:#d6336c}
-  .countdown{display:flex;gap:10px;justify-content:center;margin:18px 0}
-  .countdown div{background:#d6336c;color:#fff;border-radius:14px;padding:12px 0;width:72px}
-  .countdown b{font-size:24px;display:block}
-  .countdown small{font-size:11px;opacity:.9}
-  .btn{
-    display:block;text-align:center;text-decoration:none;
-    background:#d6336c;color:#fff;padding:16px;border-radius:50px;
-    font-weight:800;font-size:18px;margin-top:14px;box-shadow:0 8px 20px rgba(214,51,108,.35)
-  }
-  .btn-outline{background:#fff;color:#d6336c;border:2px solid #d6336c;box-shadow:none}
-  .section{padding:32px 20px;max-width:500px;margin:0 auto;text-align:center}
-  .card{background:#fff;border:1px solid #ffe0ec;border-radius:18px;padding:18px;margin:12px 0;text-align:left}
-  input,select,textarea{width:100%;padding:13px;border-radius:12px;border:1.5px solid #ffd6e7;margin:8px 0;font-size:16px;outline:none}
-  input:focus{border-color:#d6336c}
-  button{width:100%;padding:15px;border:none;border-radius:50px;background:#25D366;color:#fff;font-weight:800;font-size:17px;cursor:pointer}
-  .success{display:none;background:#d4edda;color:#155724;padding:14px;border-radius:12px;margin-top:12px}
-  .footer{font-size:13px;opacity:.6;padding-bottom:30px;text-align:center}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- CAPA -->
 <section class="hero">
   <div class="badge">VOCÊ É NOSSO CONVIDADO ESPECIAL</div>
   <h1>Serena <span>faz 1 aninho!</span></h1>
-  
-  <!-- TROQUE O EMOJI PELA FOTO DELA -->
-  <!-- <img src="foto-serena.jpg" class="foto"> -->
   <div class="foto">👶🏻🎀</div>
 
   <div class="info">
-    <p>🗓️ <strong>Sábado, 21 de Fevereiro</strong></p>
+    <p>🗓️ <strong>Domingo, 21 de Fevereiro</strong></p>
     <p>🕐 <strong>11h00</strong></p>
-    <p>📍 <strong>ESPAÇO JARDIM 🌴 - Corumbá, Nova Iguaçu - RJ</strong></p>
+    <p>📍 <strong> ESPAÇO JARDIM 🌴 - Nova Iguaçu, RJ</strong></p>
     <p>🎨 Tema: Jardim Encantado Rosa</p>
 
     <div class="countdown">
@@ -68,44 +26,36 @@
       <div><b id="s">00</b><small>SEG</small></div>
     </div>
 
-    <!-- BOTÃO 1: ABRE A PLANILHA / FORMULÁRIO -->
-    <!-- 👇 TROQUE O LINK AQUI PELA SUA PLANILHA DO GOOGLE -->
     <a class="btn" href="https://docs.google.com/spreadsheets/d/SEU_ID_DA_PLANILHA" target="_blank">✅ CONFIRMAR PRESENÇA</a>
-    <a class="btn btn-outline" href="https://maps.app.goo.gl/FbxBubQZT4U8UqVb6" target="_blank">📍 Como chegar</a>
+    <a class="btn btn-outline" href="https://maps.google.com/?q=Nova+Iguaçu+RJ" target="_blank">📍 Como chegar</a>
   </div>
 </section>
 
-<!-- CONFIRMAÇÃO DENTRO DO SITE -->
 <section class="section">
-  <h2 style="color:#d6336c">Confirme aqui também 💌</h2>
-  <p style="margin:10px 0">Preencha e sua resposta vai direto pra planilha da mamãe!</p>
-
+  <h2>Confirme aqui também 💌</h2>
+  <p>Preencha e sua resposta vai direto pra planilha!</p>
   <div class="card">
     <form id="rsvpForm">
       <label>Seu nome *</label>
       <input type="text" id="nome" placeholder="Ex: Tia Maria" required>
-
       <label>Você vai? *</label>
       <select id="vai">
         <option value="Sim, vou!">Sim, vou! 🎉</option>
         <option value="Não vou conseguir">Não vou conseguir 😢</option>
       </select>
-
       <label>Quantas pessoas?</label>
-      <select id="qtd">
-        <option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option>
-      </select>
-
-      <label>Deixe um recadinho pra Serena</label>
+      <select id="qtd"><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option></select>
+      <label>Recadinho pra Serena</label>
       <textarea id="msg" rows="2" placeholder="Parabéns Serena!"></textarea>
-
       <button type="submit">Enviar confirmação para planilha</button>
-      <div class="success" id="ok">✅ Obrigada! Sua presença foi registrada! Te esperamos! 🎀</div>
+      <div class="success" id="ok">✅ Obrigada! Sua presença foi registrada!</div>
     </form>
   </div>
-
-  <p style="margin-top:14px">Dúvidas? Fala com a mamãe no WhatsApp</p>
   <a class="btn" style="background:#25D366" href="https://wa.me/5521980885515?text=Oi!%20Confirmo%20presença%20no%20aniversário%20da%20Serena!" target="_blank">💬 Chamar no WhatsApp</a>
 </section>
 
 <p class="footer">Feito com amor para Serena • 1 aninho • 2026</p>
+
+<script src="script.js"></script>
+</body>
+</html>
