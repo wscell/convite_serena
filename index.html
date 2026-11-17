@@ -3,25 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>1 Aninho da Serena 🎀</title>
+<title>2 Aninhos da Serena 🎀</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
   body{background:#fff5f8;color:#5a2a3a;overflow-x:hidden}
-  .hero{
-    min-height:100vh;
-    background: linear-gradient(180deg,#ffd6e7 0%, #fff5f8 70%);
-    display:flex;flex-direction:column;align-items:center;justify-content:center;
-    text-align:center;padding:20px;position:relative;
-  }
+  .hero{min-height:100vh;background:linear-gradient(180deg,#ffd6e7 0%, #fff5f8 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px;position:relative}
   .hero::before{content:"🎀 ✨ 🧸 ✨ 🎀";font-size:28px;letter-spacing:8px}
   .badge{background:#fff;color:#e7548a;padding:8px 18px;border-radius:50px;font-weight:700;font-size:13px;letter-spacing:1px;margin:16px 0;box-shadow:0 4px 15px rgba(0,0,0,.08)}
   h1{font-size:52px;line-height:1;color:#d6336c}
   h1 span{display:block;font-size:22px;color:#5a2a3a;margin-top:6px;font-weight:400}
-  .foto{
-    width:220px;height:220px;border-radius:50%;object-fit:cover;
-    border:8px solid #fff;box-shadow:0 10px 30px rgba(214,51,108,.25);
-    margin:22px 0;background:#ffe0ec;display:flex;align-items:center;justify-content:center;font-size:90px;
-  }
+  .foto{width:220px;height:220px;border-radius:50%;object-fit:cover;border:8px solid #fff;box-shadow:0 10px 30px rgba(214,51,108,.25);margin:22px 0;background:#ffe0ec;display:flex;align-items:center;justify-content:center;font-size:90px}
   .info{background:#fff;border-radius:20px;padding:20px;width:100%;max-width:420px;box-shadow:0 8px 25px rgba(0,0,0,.07)}
   .info p{font-size:17px;margin:8px 0}
   .info strong{color:#d6336c}
@@ -29,11 +20,7 @@
   .countdown div{background:#d6336c;color:#fff;border-radius:14px;padding:12px 0;width:72px}
   .countdown b{font-size:24px;display:block}
   .countdown small{font-size:11px;opacity:.9}
-  .btn{
-    display:block;text-align:center;text-decoration:none;
-    background:#d6336c;color:#fff;padding:16px;border-radius:50px;
-    font-weight:800;font-size:18px;margin-top:14px;box-shadow:0 8px 20px rgba(214,51,108,.35)
-  }
+  .btn{display:block;text-align:center;text-decoration:none;background:#d6336c;color:#fff;padding:16px;border-radius:50px;font-weight:800;font-size:18px;margin-top:14px;box-shadow:0 8px 20px rgba(214,51,108,.35)}
   .btn-outline{background:#fff;color:#d6336c;border:2px solid #d6336c;box-shadow:none}
   .section{padding:32px 20px;max-width:500px;margin:0 auto;text-align:center}
   .card{background:#fff;border:1px solid #ffe0ec;border-radius:18px;padding:18px;margin:12px 0;text-align:left}
@@ -46,75 +33,56 @@
 </head>
 <body>
 
-<!-- CAPA -->
 <section class="hero">
   <div class="badge">VOCÊ É NOSSO CONVIDADO ESPECIAL</div>
-  <h1>Serena <span>faz 1 aninho!</span></h1>
-  
-  <!-- TROQUE O EMOJI PELA FOTO DELA -->
-  <!-- <img src="foto-serena.jpg" class="foto"> -->
+  <h1>Serena <span>faz 2 aninhos!</span></h1>
   <div class="foto">👶🏻🎀</div>
-
   <div class="info">
-    <p>🗓️ <strong>Domingo, 21 de Fevereiro</strong></p>
+    <p>🗓️ <strong>Domingo, 21 de Fevereiro de 2027</strong></p>
     <p>🕐 <strong>11h00</strong></p>
-    <p>📍 <strong>ESPAÇO JARDIM 🌴 - Corumba, Nova Iguaçu,RJ</strong></p>
+    <p>📍 <strong>ESPAÇO JARDIM 🌴 - Corumba, Nova Iguaçu, RJ</strong></p>
     <p>🎨 Tema: Jardim Encantado Rosa</p>
-
     <div class="countdown">
       <div><b id="d">00</b><small>DIAS</small></div>
       <div><b id="h">00</b><small>HORAS</small></div>
       <div><b id="m">00</b><small>MIN</small></div>
       <div><b id="s">00</b><small>SEG</small></div>
     </div>
-
-    <!-- BOTÃO 1: ABRE A PLANILHA / FORMULÁRIO -->
-    <!-- 👇 TROQUE O LINK AQUI PELA SUA PLANILHA DO GOOGLE -->
-    <a class="btn" href="https://script.google.com/macros/s/AKfycbyJXTQ5OIQFQRTF90Ya2wx2bLLpMlC2Rcsg69suDHUo76J0qRB4SSpuz7hNaBirLk9G/exec" target="_blank">✅ CONFIRMAR PRESENÇA</a>
-    <a class="btn btn-outline" href="https://maps.google.com/?q=espaço+jardim+Nova+Iguaçu+RJ" target="_blank">📍 Como chegar</a>
+    <a class="btn" href="#rsvp">✅ CONFIRMAR PRESENÇA</a>
+    <a class="btn btn-outline" href="https://maps.google.com/?q=espaço+jardim+Corumba+Nova+Iguaçu+RJ" target="_blank">📍 Como chegar</a>
   </div>
 </section>
 
-<!-- CONFIRMAÇÃO DENTRO DO SITE -->
-<section class="section">
+<section class="section" id="rsvp">
   <h2 style="color:#d6336c">Confirme aqui também 💌</h2>
   <p style="margin:10px 0">Preencha e sua resposta vai direto pra planilha da mamãe!</p>
-
   <div class="card">
     <form id="rsvpForm">
       <label>Seu nome *</label>
       <input type="text" id="nome" placeholder="Ex: Tia Maria" required>
-
       <label>Você vai? *</label>
       <select id="vai">
         <option value="Sim, vou!">Sim, vou! 🎉</option>
         <option value="Não vou conseguir">Não vou conseguir 😢</option>
       </select>
-
       <label>Quantas pessoas?</label>
-      <select id="qtd">
-        <option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option>
-      </select>
-
+      <select id="qtd"><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option></select>
       <label>Deixe um recadinho pra Serena</label>
       <textarea id="msg" rows="2" placeholder="Parabéns Serena!"></textarea>
-
       <button type="submit">Enviar confirmação para planilha</button>
       <div class="success" id="ok">✅ Obrigada! Sua presença foi registrada! Te esperamos! 🎀</div>
     </form>
   </div>
-
   <p style="margin-top:14px">Dúvidas? Fala com a mamãe no WhatsApp</p>
-  <a class="btn" style="background:#25D366" href="https://wa.me/5521980885515?text=Oi!%20Confirmo%20presença%20no%20aniversário%20da%20Serena!" target="_blank">💬 Chamar no WhatsApp</a>
+  <a class="btn" style="background:#25D366" href="https://wa.me/5521980885515?text=Oi!%20Confirmo%20presença%20no%20aniversário%20de%202%20anos%20da%20Serena%20dia%2021/02/2027!" target="_blank">💬 Chamar no WhatsApp</a>
 </section>
 
-<p class="footer">Feito com amor para Serena • 1 aninho • 2027</p>
+<p class="footer">Feito com amor para Serena • 2 aninhos • 21/02/2027</p>
 
 <script>
-// ===== CONTAGEM REGRESSIVA =====
-// 👇 TROQUE A DATA AQUI
+// CONTAGEM - 21/02/2027 às 11h
 const dataFesta = new Date("2027-02-21T11:00:00-03:00").getTime();
-setInterval(()=>{
+function atualizar(){
   const agora = new Date().getTime();
   const falta = dataFesta - agora;
   if(falta < 0) return;
@@ -122,9 +90,13 @@ setInterval(()=>{
   document.getElementById("h").innerText = Math.floor((falta % (1000*60*60*24)) / (1000*60*60));
   document.getElementById("m").innerText = Math.floor((falta % (1000*60*60)) / (1000*60));
   document.getElementById("s").innerText = Math.floor((falta % (1000*60)) / 1000);
-},1000);
+}
+atualizar();
+setInterval(atualizar, 1000);
 
-// ===== ENVIAR PARA PLANILHA GOOGLE =====
+// ENVIAR PARA PLANILHA - CORRIGIDO, SEM O IF QUE TRAVAVA!
+const URL_PLANILHA = "https://script.google.com/macros/s/AKfycbyJXTQ5OIQFQRTF90Ya2wx2bLLpMlC2Rcsg69suDHUo76J0qRB4SSpuz7hNaBirLk9G/exec";
+
 document.getElementById("rsvpForm").addEventListener("submit", async function(e){
   e.preventDefault();
   const dados = {
@@ -133,19 +105,10 @@ document.getElementById("rsvpForm").addEventListener("submit", async function(e)
     qtd: document.getElementById("qtd").value,
     msg: document.getElementById("msg").value
   };
-
-  // 👇 COLE AQUI O LINK DO SEU APPS SCRIPT / GOOGLE SHEETS
-  const URL_PLANILHA = "https://script.google.com/macros/s/AKfycbyJXTQ5OIQFQRTF90Ya2wx2bLLpMlC2Rcsg69suDHUo76J0qRB4SSpuz7hNaBirLk9G/exec";
-
   try{
-    if(URL_PLANILHA.includes("https://script.google.com/macros/s/AKfycbyJXTQ5OIQFQRTF90Ya2wx2bLLpMlC2Rcsg69suDHUo76J0qRB4SSpuz7hNaBirLk9G/exec")){
-      // Se ainda não configurou, só mostra sucesso de exemplo
-      document.getElementById("ok").style.display = "block";
-      document.getElementById("ok").innerText = "✅ Exemplo: Conecte sua planilha para salvar de verdade! (veja o passo a passo)";
-    } else {
-      await fetch(URL_PLANILHA, {method:"POST", mode:"no-cors", body: JSON.stringify(dados)});
-      document.getElementById("ok").style.display = "block";
-    }
+    await fetch(URL_PLANILHA, {method:"POST", mode:"no-cors", headers:{"Content-Type":"text/plain"}, body: JSON.stringify(dados)});
+    document.getElementById("ok").style.display = "block";
+    document.getElementById("ok").innerText = "✅ Obrigada! Sua presença foi registrada! Te esperamos! 🎀";
     this.reset();
   }catch(err){
     alert("Deu erro, tenta de novo ou chama no WhatsApp!");
